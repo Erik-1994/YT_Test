@@ -7,8 +7,7 @@ from lib2to3.pgen2 import driver
 def test_setup():
     global driver
 
-    driver = webdriver.Chrome(
-        executable_path="C:\\Users\\Lenovo Legion\\Desktop\\chromedriver.exe")
+    driver = webdriver.Chrome()
 
     driver.implicitly_wait(10)
     driver.maximize_window()
